@@ -1,0 +1,131 @@
+
+
+#ImgHTML::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Html.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgCss::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Css.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgJs::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Js.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgMysql::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Mysql.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgAsp::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Asp.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgCs::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Cs.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgCpp::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Cpp.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgPhp::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Php.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgSqlserver::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Sqlserver.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgNodejs::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Nodejs.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+#ImgVuejs::before{
+    content: '';
+    width: 90%;
+    height: 100%;
+    background: url(../ImgCursos/Vuejs.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.ElementoCarrito{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.CerrarElemento{
+    background: url(../IconosProyect/Cerrar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+#TituloCurso{
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(rgba(235,119,242,0.9),rgba(235,170,211,0.7), rgba(235,221,148,0.5)),
+        url(../Imagenes/FondoMenu1.jpg);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#TituloCurso > h1{
+    font-family: 'Readex Pro';
+    margin-left: 20px;
+}
+
+#TituloCurso > span{
+    font-weight: bolder;
+    font-size: 150%;
+    margin-left: 20px;
+}
+
+#PrimerApartado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContenidoCurso_Info{
+    width: 600px;
+    border: 1px solid #adadad;
+    padding: 15px;
+    overflow: hidden;
+    margin: 0px 10px 10px 10px;
+}
+
+#ContenidoCurso_Info > h1{
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #adadad;
+    background: url(../IconosProyect/bajo.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    cursor: pointer;
+    
+}
+
+#ContenidoCurso_Info > div{
+    background: #adadad;
+    width: calc(100% - 20px);
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+#TituloContenidoCur{
+    width: 600px;
+    padding: 16px;
+    background: #adadad;
+    display: block;
+    font-family: 'Readex Pro';
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 75%;
+}
+
+#VideoCurso{
+    width: 50%;
+    height: 300px;
+    
+}

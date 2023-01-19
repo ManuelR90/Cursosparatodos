@@ -1,0 +1,54 @@
+/* Fondo Vino*/
+
+.FondoColor1 {background: #6d1a42;}
+.FondoColor2 {background: #363554;}
+.FondoColor3 {background: #dddde2;}
+.FondoColor4 {background: #f2f0f0;}
+.FondoColor5 {background: #ffffff;}
+.FondoColor6 {background: #ff9933;}
+.FondoColor7 {background: #dedbcc;}
+.FondoColor8 {background: #000000;}
+
+.TextoColor1 {color: #6d1a42;}
+.TextoColor2 {color: #363554;}
+.TextoColor3 {color: #dddde2;}
+.TextoColor4 {color: #f2f0f0;}
+.TextoColor5 {color: #ff9933;}
+.TextoColor6 {color: #dedbcc;}
+
+/*Resaltadores*/
+
+.TextoColorB1 {color: #ffffff;}
+.TextoColorB2 {color: #000000;}
+
+/*Colores*/
+
+.VinoFondo {background: #520720;}
+.VinoClaroFondo {background: #a56376;}
+.CafeClaroFondo {background: #e4c5c3;}
+.CremaFondo {background: #fcead7;}
+.AzulCieloFondo {background: #c4dbe2;}
+.VinoOscuroFondo {background: #23010d;}
+.VinoAperladoFondo {background: #540020;}
+.RojoOpacoFondo {background: #981e45;}
+.RosaClaroFondo {background: #fe5d87;}
+.RosaCieloFondo {background: #fda3b9;}
+.RosaFrioFondo {background: #f9f3fa;}
+.GrisFrioFondo {background: #ebe6d9;}
+
+/*Texto*/
+
+.VinoTexto {color: #520720;}
+.VinoClaroTexto {color: #a56376;}
+.CafeClaroTexto {color: #e4c5c3;}
+.CremaTexto {color: #fcead7;}
+.AzulCieloTexto {color: #c4dbe2;}
+.VinoOscuroTexto {color: #23010d;}
+.VinoAperladoTexto {color: #540020;}
+.RojoOpacoTexto {color: #981e45;}
+.RosaClaroTexto {color: #fe5d87;}
+.RosaCieloTexto {color: #fda3b9;}
+.RosaFrioTexto {color: #f9f3fa;}
+.GrisFrioTexto {color: #ebe6d9;}
+
+

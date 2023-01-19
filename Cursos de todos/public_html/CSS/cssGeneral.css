@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Esconder{
+    visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Cabecera*/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    z-index: 90;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+header>span{
+    font-weight: bolder;
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16pt;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header>ul{
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    list-style: none;
+    width: 450px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+header>ul>li>a{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+header>ul>li>a:hover{
+    background: #6d1a42; 
+    color: #ffffff;
+}
+
+#Carrito>img{
+    width: 24px;
+    height: 24px;
+}
+#Carrito{
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+/* Formulario*/
+
+#ContenedorFormulario{
+    position: fixed;
+    top: -100%;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#Formulario{
+    width: 450px;
+    height: 80%;
+    background: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 25px;
+    border-radius: 10px;
+}
+
+#Formulario>span{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: auto;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+#AceptarFormulario{
+    cursor: pointer;
+    padding: 1.5% 40px;
+    font-size: 14pt;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    background: #6d1a42;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: auto;
+}
+
+#AceptarFormulario:hover{
+    background: #ffffff;
+    color: #6d1a42;
+    font-weight: bold;
+    border: 1px solid #6d1a42;
+}
+
+.InputFormulario{
+    border: 1px solid #999999;
+    padding: 10px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 1%;
+}
+
+#Formulario>label{
+    font-family: 'Readex Pro';
+    align-self: flex-start;
+    margin-top: 2%;
+    margin-left: 50px;
+}
+
+.division{
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0px;
+    font-weight: 600;
+}
+.division>div{
+    width: 40%;
+    height: 1px;
+    background: #6d1a42;
+    margin: 0px 5px;
+    opacity: 0.3;
+}
+
+#Cerrar{
+    width: 24px;
+    height: 24px;
+    background: url(../IconosProyect/Cerrar.png);
+    margin-top: -35px;
+    align-self: flex-end;
+    border-radius: 50px;
+    padding: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.TextIniciaS{
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/*Carrito*/
+
+#FondoCarrito{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    display: none;
+}
+
+#ContenedorCarritoC{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: -450px;
+    background: #ffffff;
+    z-index: 100;
+    width: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+
+#TituloCarrito{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    
+}
+
+#TituloCarrito > h1{
+    font-family: 'Readex Pro';
+}
+
+#TituloCarrito > #CerrarC{
+    width: 20px;
+    height: 20px;
+    background: url(../IconosProyect/Cerrar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+#ContenidoCarrito{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+}
+
+#ContenidoCarrito > img{
+    width: 56px;
+    height: 56px;
+}
+
+#ContenedorCarritoC > #Agregar{
+    border: 3px solid #6d1a42;
+    background: #6d1a42;
+    padding: 10px;
+    font-size: 16pt;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Readex Pro';
+    border-radius: 5px;
+    margin-top: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ContenedorCarritoC > #Agregar:hover{
+    background: #ffffff;
+    color: #6d1a42;
+}
+
+.Agregado{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+.CerrarPedido{
+    width: 32px;
+    height: 32px;
+    background: #6d1a42;
+    border-radius: 50%;
+    background: url(../IconosProyect/Cerrar.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+
+
+/*Buscar*/
+
+#Buscar{
+    width: 40%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 0px 40px 40px 0px;
+    align-self: flex-start;
+    margin: 10px 0px;
+    font-weight: 600;
+    border-style: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+input[type=text]:active, input[type=email]:active, input[type=password]:active{
+    outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline: none;
+}
+
+.BordeBuscar{
+    border-style: solid;
+    border: 1px solid #474747;
+}
+
+#BtnBuscar{
+    background: url(../ImgCursos/Buscar.png),
+        linear-gradient(rgba(250,250,250,1), rgba(250,250,250,1));
+    width: 50px;
+    height: 40px;
+    border-radius: 40px 0px 0px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Opciones inicio*/
+
+#Portada{
+    color: #6d1a42;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(235,119,242,1),rgba(235,170,211,1), rgba(235,221,148,1));
+}
+.CuadroPortada{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    border: 3px solid #ffffff;
+    box-shadow: 2px 2px 1px rgba(235,119,242,1);
+}
+
+.CuadroPortada:nth-child(2){
+    background: url(../Imagenes/FondoP1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.CuadroPortada:nth-child(3){
+    margin-bottom: 100px;
+    background: url(../Imagenes/FondoP2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.CuadroPortada:nth-child(4){
+    background: url(../Imagenes/FondoP3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#TituloP{
+    margin-left: 10px;
+    font-size: 200%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 70%;
+}
+#Descubrirmas{
+    width: 35%;
+    border: 3px solid #6d1a42;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20pt;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+#Descubrirmas:hover{
+    background: #6d1a42;
+    color: #ffffff;
+}
+/*Menu de cursos*/
+
+#ContenedorMenu{
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+    justify-content: center;
+}
+
+#ContenedorMenu>h1, #ContenedorMenu>span {
+    width: 100%;
+    padding-left: 10%;
+    cursor: default;
+}
+
+#ContenedorMenu>h1{
+    font-family: 'Readex Pro';
+    font-size: 30pt;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.ArticuloMenu{
+    width: 400px;
+    height: 350px;
+    margin: 50px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    z-index: 1;
+    background: linear-gradient(to right,rgba(250,250,250,0.8),rgba(250,250,250,0.8)),
+        url(../Imagenes/FondoMenu1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.OpcionMenu{
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 1px 1px 3px #999999;
+}
+
+.TituloCurso{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TituloCurso>h1{
+    font-family: 'Readex Pro';
+    margin: 5px;
+}
+
+
+.Inscribirse{
+    color: #6d1a42;
+    border: 1px solid;
+    padding: 10px;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.Inscribirse{
+    background: #6d1a42; 
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.Inscribirse:hover{
+    background: #ffffff;
+    color: #6d1a42;
+    font-weight: bold;
+    border: 1px solid #6d1a42;
+}
+
+
+.Detalles{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.Valoracion{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    
+}
+
+.Estrellas{
+    width: 16px;
+    height: 16px;
+    background: url(../IconosProyect/Estrella.png);
+    background-size: cover;
+    margin: 0px 1px;
+}
+
+.EstrellasR{
+    width: 16px;
+    height: 16px;
+    background: url(../IconosProyect/EstrellaR.png);
+    background-size: cover;
+    margin: 0px 1px;
+}
+
+.Valoracion>span{
+    margin-left: 10px;
+}
+
+.Informacion{
+    background: url(../IconosProyect/Info.png);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.PartePrecio{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Precio{
+    font-family: 'Readex Pro';
+    margin-left: 10px;
+}
+
+/*Frame animado*/
+
+#ConvierteteInstructor{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, rgba(109,26,66,0.95), rgba(109,26,66,1)),
+        url(../Imagenes/FondoMenu2.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#FondoApInstructor{
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),
+        url(../Inst/JustDoit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-right: 50px;
+}
+
+.Contenido{
+    background: #000000;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    
+}
+
+.Contenido::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 175px;
+    border-top: 35px solid #ffffff;
+    border-left: 35px solid #ffffff;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+.Contenido>span{
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#ConvertirInstructor{
+    position: absolute;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 120px;
+    margin-left: 30px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Readex Pro';
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+#ConvertirInstructor > a{
+    color: #ffffff;
+    font-family: 'Readex Pro';
+}
+
+#ConvertirInstructor:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+#ConvertirInstructor:hover>a{
+    color: #000000;
+}
+
+
+/*Pie de página*/
+
+#PiePag{
+    width: 100%;
+    height: 30%;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+#PiePag>span{
+    margin: 10px 10px;
+}
+
+#PiePag>a{
+    color: #ffffff;
+    margin-right: auto;
+    margin-left: 35px;
+}
+
